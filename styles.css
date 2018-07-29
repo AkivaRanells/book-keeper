@@ -3,14 +3,31 @@
     width: 20vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  repeat(1fr, 4);
+    grid-template-rows:  repeat(1fr, 7);
     grid-template-areas: 
     "ul ui"
     "pl pi"
+    "prl pri"
+    "tl ti"
+    "cl ci"
     "cl ci"
     "lb lb"
     ;
 }
+#pword-repeat-label{
+    grid-area: prl;
+}
+#pword-repeat-input{
+    grid-area: pri;
+}
+#telephone-label{
+    grid-area: tl;
+}
+
+#telephone-input{
+    grid-area: ti;
+}
+
 #uname-label{
     grid-area: ul;
 }
