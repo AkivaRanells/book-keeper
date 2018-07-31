@@ -8,11 +8,19 @@
     "ul ui"
     "pl pi"
     "prl pri"
+    "el ei"
     "tl ti"
-    "cl ci"
+    "col coi"
     "cl ci"
     "lb lb"
     ;
+    grid-gap: 2vh;
+}
+#email-label{
+    grid-area: el;
+}
+#email-input{
+    grid-area: ei;
 }
 #pword-repeat-label{
     grid-area: prl;
@@ -54,4 +62,16 @@ input:invalid{
 }
 input:valid{
     border: 2px solid black;
+}
+#country-label{
+    grid-area: col;
+}
+#country-input{
+    grid-area: coi;
+}
+.error{
+    color: red;
+}
+.welcome{
+    color: green;
 }

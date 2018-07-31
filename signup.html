@@ -16,31 +16,37 @@
                 <label>Username: </label>
             </div>
             <div id="uname-input">
-                <input type="email" required placeholder="Email:"/>
+                <input type="text" id="uname" required/>
+            </div>
+            <div id="email-label">
+                <label>Email:</label>
+            </div>
+            <div id="email-input">
+                <input type="email" required placeholder="Email:">
             </div>
             <div id="pword-label">
                 <label> Password: </label>
             </div>
             <div id="pword-input">
-                <input type="password" required/>
+                <input type="password" id="password" required/>
             </div>
             <div id="pword-repeat-label">
                 <label> Password repeat: </label>
             </div>
             <div id="pword-repeat-input">
-                <input type="password" required/>
+                <input type="password" id="password-repeat" required/>
             </div>
             <div id="tel-label">
                 <label for="tel"> Telephone: </label>
             </div>
             <div id="tel-input">
-                <input type="tel">
+                <input type="tel"id="telephone">
             </div>
             <div id="country-label">
                 <label for="country"> Country: </label>
             </div>
            <div id="country-input">
-               <input type="text">
+               <input type="text" required id="country">
            </div>
             <div id="checkbox-label">
                 <label>Remember me</label>
@@ -49,10 +55,11 @@
                 <input type="checkbox" required/>
             </div>
             <div id="login-button">
-                <button type="submit">Login</button>
+                <button type="button" onclick="submitForm();">Login</button>
             </div>
         </div>
     </form>
+    <script src="main.js"></script> 
 </body>
 
 </html>
