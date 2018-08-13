@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+
+<body>
+    <form>
+        <div id="login-grid">
+            <div id="uname-label">
+                <label>Username: </label>
+            </div>
+            <div id="uname-input">
+                <input type="text" id="uname" required/>
+            </div>
+            <div id="email-label">
+                <label>Email:</label>
+            </div>
+            <div id="email-input">
+                <input type="email" id="email" required placeholder="Email:">
+            </div>
+            <div id="pword-label">
+                <label> Password: </label>
+            </div>
+            <div id="pword-input">
+                <input type="password" id="pword" required/>
+            </div>
+            <div id="pword-repeat-label">
+                <label> Password repeat: </label>
+            </div>
+            <div id="pword-repeat-input">
+                <input type="password" id="pword-repeat" required/>
+            </div>
+            <div id="tel-label">
+                <label for="tel"> Telephone: </label>
+            </div>
+            <div id="tel-input">
+                <input type="tel" id="tel">
+            </div>
+            <div id="country-label">
+                <label for="country"> Country: </label>
+            </div>
+           <div id="country-input">
+               <input type="text" required id="country">
+           </div>
+            <div id="checkbox-label">
+                <label>Remember me</label>
+            </div>
+            <div id="checkbox-input">
+                <input type="checkbox" id="checkbox" required/>
+            </div>
+            <div id="login-button">
+                <button type="button" onclick="submitForm();">Login</button>
+            </div>
+        </div>
+    </form>
+    <script src="main.js"></script> 
+</body>
+
+</html>

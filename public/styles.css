@@ -1,0 +1,77 @@
+#login-grid{
+    height: 10vh;
+    width: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  repeat(1fr, 7);
+    grid-template-areas: 
+    "ul ui"
+    "pl pi"
+    "prl pri"
+    "el ei"
+    "tl ti"
+    "col coi"
+    "cl ci"
+    "lb lb"
+    ;
+    grid-gap: 2vh;
+}
+#email-label{
+    grid-area: el;
+}
+#email-input{
+    grid-area: ei;
+}
+#pword-repeat-label{
+    grid-area: prl;
+}
+#pword-repeat-input{
+    grid-area: pri;
+}
+#telephone-label{
+    grid-area: tl;
+}
+
+#telephone-input{
+    grid-area: ti;
+}
+
+#uname-label{
+    grid-area: ul;
+}
+#uname-input{
+    grid-area: ui;
+}
+#pword-label{
+    grid-area: pl;
+}
+#pword-input{
+    grid-area: pi;
+}
+#checkbox-label{
+    grid-area: cl;
+}
+#checkbox-input{
+    grid-area: ci;
+}
+#login-button{
+    grid-area: lb;
+}
+input:invalid{
+    border: 0.5px dotted red;
+}
+input:valid{
+    border: 2px solid black;
+}
+#country-label{
+    grid-area: col;
+}
+#country-input{
+    grid-area: coi;
+}
+.error{
+    color: red;
+}
+.welcome{
+    color: green;
+}

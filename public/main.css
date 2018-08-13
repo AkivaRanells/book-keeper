@@ -1,0 +1,40 @@
+#login-grid{
+    height: 10vh;
+    width: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  repeat(1fr, 4);
+    grid-template-areas: 
+    "ul ui"
+    "pl pi"
+    "cl ci"
+    "lb lb"
+    ;
+}
+#uname-label{
+    grid-area: ul;
+}
+#uname-input{
+    grid-area: ui;
+}
+#pword-label{
+    grid-area: pl;
+}
+#pword-input{
+    grid-area: pi;
+}
+#checkbox-label{
+    grid-area: cl;
+}
+#checkbox-input{
+    grid-area: ci;
+}
+#login-button{
+    grid-area: lb;
+}
+input:invalid{
+    border: 0.5px dotted red;
+}
+input:valid{
+    border: 2px solid black;
+}
